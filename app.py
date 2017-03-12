@@ -95,10 +95,10 @@ def makeWebhookResult(req):
     zone = parameters.get("shipping-zone")
     
     #con = p.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
-    #con = psycopg2.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
-                   # cur = con.cursor()
-                   #cur.execute(select cost from shipping_zones where id=3)
-                   # rows = cur.fetachall()
+    con = psycopg2.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
+                    #cur = con.cursor()
+                    #cur.execute(select cost from shipping_zones where id=3)
+                    #rows = cur.fetachall()
                     
                     #for row in rows:
                     #cost = row[0]
