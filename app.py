@@ -98,7 +98,7 @@ def makeWebhookResult(req):
     
     
     urlparse.uses_netloc.append("postgres")
-    url = urlparse.urlparse(os.environ["DATABASE_URL"])
+    url = urlparse.urlparse(os.environ["postgres://umrftdcwqqsixn:e3ffb58ad38ceb736cc2fadd041faa8cea0262ea6b29614d3f539551a91c0647@ec2-107-22-244-62.compute-1.amazonaws.com:5432/de3h20sdptjvi0"])
 
     conn = psycopg2.connect(
         database=url.path[1:],
