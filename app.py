@@ -115,6 +115,7 @@ def makeWebhookResult(req):
         "displayText": speech,
         #"data": {},
         # "contextOut": [],
+        "billamount": str(amount[sin]),
         "source": "apiai-onlinestore-shipping"
     }
 
