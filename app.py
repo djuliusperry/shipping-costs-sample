@@ -43,10 +43,10 @@ def makeWebhookResult(req):
                     cur.execute(select cost from shipping_zones where id=3)
                     rows.cur.fetachall()
                     
-                    for r in rows:
-                    cost = r["cost"]
+                    #for r in rows:
+                    #cost = r["cost"]
     
-    #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':5000, 'Africa':500}
+    cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':5000, 'Africa':500}
 
     speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
 
