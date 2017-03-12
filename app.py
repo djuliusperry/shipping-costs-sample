@@ -100,13 +100,14 @@ def makeWebhookResult(req):
     urlparse.uses_netloc.append("postgres")
     url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
-    #conn = psycopg2.connect(
-    #    database=url.path[1:],
-    #    user=url.username,
-    #    password=url.password,
-    #    host=url.hostname,
-    #    port=url.port
-    #)
+    conn = psycopg2.connect(
+        database=url.path[1:],
+        user=url.username,
+        password=url.password,
+        host=url.hostname,
+        port=url.port
+    )
+    
     #con = p.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
     #con = psycopg2.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
                     #cur = con.cursor()
@@ -119,7 +120,7 @@ def makeWebhookResult(req):
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':800, 'Africa':500}
 
     #speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
-    speech = "The cost of shipping to " + zone + " is " + "154 " + " euros."
+    speech = "The cost of shipping to " + zone + " is " + "155 " + " euros."
                             
     print("Response:")
     print(speech)
