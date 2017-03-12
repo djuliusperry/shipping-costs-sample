@@ -94,28 +94,9 @@ def makeWebhookResult(req):
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    zone = parameters.get("shipping-zone")
-    
-    
-   # urlparse.uses_netloc.append("postgres")
-   # url = urlparse.urlparse(os.environ["postgres://umrftdcwqqsixn:e3ffb58ad38ceb736cc2fadd041faa8cea0262ea6b29614d3f539551a91c0647@ec2-107-22-244-62.compute-1.amazonaws.com:5432/de3h20sdptjvi0"])
-
-    #conn = psycopg2.connect(
-     #   database=url.path[1:],
-      #  user=url.username,
-       # password=url.password,
-        #host=url.hostname,
-        #port=url.port
-    #)
-    
-    #con = p.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
-    #conn = psycopg2.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
-     #               cur = conn.cursor()
-                    #cur.execute(select cost from shipping_zones where id=3)
-                    #rows = cur.fetachall()
-                    
-                    #for row in rows:
-                    #cost = row[0]
+    #zone = parameters.get("shipping-zone")
+    billmonth = parameters.get("billmonth")
+    sin = parameters.get("sin")
 
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':800, 'Africa':500}
 
