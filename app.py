@@ -94,9 +94,9 @@ def makeWebhookResult(req):
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    #zone = parameters.get("shipping-zone")
-    billmonth = parameters.get("billmonth")
-    sin = parameters.get("sin")
+    zone = parameters.get("shipping-zone")
+    #billmonth = parameters.get("billmonth")
+    #sin = parameters.get("sin")
 
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':800, 'Africa':500}
 
