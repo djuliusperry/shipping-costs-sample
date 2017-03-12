@@ -100,7 +100,7 @@ def makeWebhookResult(req):
 
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':800, 'Africa':500}
     amount = {'1234567':4,387, '7654321':3,350}
-    name = {'1234567':'Perry Dominguez', '7654321':'Carlos Garcia'}
+    name = {'1234567':"Perry Dominguez", '7654321':"Carlos Garcia"}
 
     #speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
     #speech = "The cost of shipping to " + zone + " is " + "159 " + " euross."
