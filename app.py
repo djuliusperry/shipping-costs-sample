@@ -110,8 +110,8 @@ def makeWebhookResult(req):
     
     #con = p.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
     #con = psycopg2.connect("dbname"='dcf8dpgo20qc84' user='udbunywtjpldqr' host ='ec2-23-21-238-246.compute-1.amazonaws.com'")
-                    #cur = con.cursor()
-                    #cur.execute(select cost from shipping_zones where id=3)
+                    cur = conn.cursor()
+                    cur.execute(select cost from shipping_zones where id=3)
                     #rows = cur.fetachall()
                     
                     #for row in rows:
@@ -120,7 +120,7 @@ def makeWebhookResult(req):
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':800, 'Africa':500}
 
     #speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
-    speech = "The cost of shipping to " + zone + " is " + "155 " + " euros."
+    speech = "The cost of shipping to " + zone + " is " + "156 " + " euros."
                             
     print("Response:")
     print(speech)
