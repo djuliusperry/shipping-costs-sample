@@ -62,7 +62,8 @@ if __name__ == '__main__':
 import urllib
 import json
 import os
-#import psycopg2
+import psycopg2
+import urlparse
 
 from flask import Flask
 from flask import request
