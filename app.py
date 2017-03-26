@@ -99,9 +99,9 @@ def makeWebhookResult(req):
     sin = parameters.get("sin")
 
     #cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':800, 'Africa':500}
-    amount = {'1234567':4387, '7654321':3350}
-    name = {'1234567':'Perry Dominguez', '7654321':'Carlos Garcia'}
-    due = {'1234567':'March 5, 2017', '7654321':'March 6, 2017'}
+    amount = {'1234567':4387, '7654321':3350,'123123':10500 }
+    name = {'1234567':'Perry Dominguez', '7654321':'Carlos Garcia', '123123':'Gavin Barfield'}
+    due = {'1234567':'March 5, 2017', '7654321':'March 6, 2017', '123123':'March 7, 2017'}
 
     #speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
     #speech = "The cost of shipping to " + zone + " is " + "159 " + " euross."
